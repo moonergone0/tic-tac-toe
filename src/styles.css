@@ -1,0 +1,119 @@
+/* Color variables */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #f39c12;
+  --background-color: #ecf0f1;
+  --winning-color: #27ae60;
+}
+
+/* Game container */
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+/* Board container */
+.game-board {
+  margin-right: 20px;
+}
+
+/* Board */
+.board {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--background-color);
+}
+
+/* Board rows */
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Square */
+.square {
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  height: 80px;
+  width: 80px;
+  margin-right: -2px;
+  margin-bottom: -2px;
+  padding: 0;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Square focus */
+.square:focus {
+  outline: none;
+}
+
+/* Winning square */
+.winning {
+  background-color: var(--winning-color);
+  color: #fff;
+}
+
+/* Game info container */
+.game-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Status */
+.status {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Sort button */
+.sort-btn {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Sort button hover */
+.sort-btn:hover {
+  background-color: #e67e22;
+}
+
+/* Move list */
+ol {
+  padding-left: 20px;
+}
+
+/* Move list item */
+li {
+  margin-bottom: 5px;
+}
+
+/* Move button */
+li button {
+  font-size: 16px;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Move button hover */
+li button:hover {
+  background-color: #dfe4ea;
+}
